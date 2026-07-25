@@ -87,35 +87,61 @@ font-size:36px;
 
 
 <header>
+<header style="background:linear-gradient(135deg,#0a2540,#0077b6);color:white;padding:20px 60px;">
 
-<h1>CYBROX</h1>
+<div style="display:flex;justify-content:space-between;align-items:center;">
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="technology.html">Technology</a>
-    <a href="#about">About</a>
-    <a href="#">Contact</a>
-</nav>
-
-<div style="display:flex;justify-content:space-between;align-items:center;width:100%;position:relative;">
-
-    <div>
-        <h2 style="color:white;font-size:60px;margin:0;">
-            Welcome to CYBROX
-        </h2>
-
-        <p style="color:white;font-size:20px;margin-top:20px;">
-            Artificial Intelligence • Cyber Security • Web Development • Digital Solutions
-        </p>
+    <!-- Logo + Company -->
+    <div style="display:flex;align-items:center;">
+        <img src="logo.jpeg" style="height:70px;margin-right:15px;">
+        <h1 style="margin:0;font-size:38px;">CYBROX</h1>
     </div>
 
-    <div style="text-align:right;color:white;">
+    <!-- CR -->
+    <div style="text-align:right;">
         <h3 style="margin:0;">CR No: 230734</h3>
-        <p style="margin:5px 0 0;">Qatar</p>
+        <p style="margin:5px 0 0;">🇶🇦 Qatar</p>
     </div>
 
 </div>
 
+<hr style="border:1px solid rgba(255,255,255,.3);margin:18px 0;">
+
+<nav style="text-align:center;">
+    <a href="index.html" style="color:white;text-decoration:none;margin:0 25px;">Home</a>
+
+    <a href="#about" style="color:white;text-decoration:none;margin:0 25px;">About</a>
+
+    <a href="technology.html" style="color:white;text-decoration:none;margin:0 25px;">Technology</a>
+
+    <a href="#contact" style="color:white;text-decoration:none;margin:0 25px;">Contact</a>
+</nav>
+
+<hr style="border:1px solid rgba(255,255,255,.3);margin:18px 0 35px;">
+
+<div style="text-align:center;">
+
+<h2 style="font-size:64px;margin:0;">
+Welcome to CYBROX
+</h2>
+
+<div style="width:220px;height:2px;background:white;margin:20px auto;"></div>
+
+<p style="font-size:22px;">
+Artificial Intelligence • Cyber Security •
+Web Development • Digital Solutions
+</p>
+
+<a href="#services"
+style="display:inline-block;margin-top:25px;padding:15px 40px;
+border:2px solid white;border-radius:35px;
+color:white;text-decoration:none;font-weight:bold;">
+Start Now
+</a>
+
+</div>
+
+</header>
 </header>
 
 <section>
@@ -151,7 +177,11 @@ function showGallery(title,a,b,c,d){
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;align-items:start;">
 
-<div onclick="showGallery('Artificial Intelligence','ai1.jpg','ai2.jpg','ai3.jpg','ai4.jpg')" style="background:white;padding:25px;min-height:220px;border-radius:15px;box-shadow:0 4px 10px rgba(0,0,0,0.15);text-align:center;cursor:pointer;">
+<div onclick="showGallery('Artificial Intelligence',
+'artificial-intelligence.jpg.jpeg',
+'artificial-intelligence.jpg.jpeg',
+'artificial-intelligence.jpg.jpeg',
+'artificial-intelligence.jpg.jpeg')">
 <img src="artificial-intelligence.jpg.jpeg" style="width:100%;height:220px;object-fit:cover;border-radius:10px;margin-bottom:15px;">
 <h3 style="margin:10px 0;"</3>Artificial Intelligenceh</3>
 <p style="line-height:1.6;color:#555;">
