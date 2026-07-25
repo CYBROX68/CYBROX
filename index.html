@@ -118,37 +118,56 @@ Artificial Intelligence • Cyber Security • Web Development • Digital Solut
 <h2 style="font-size:60px; color:white;">
     Our Services
 </h2>
+<div id="gallery" style="display:none; padding:40px; text-align:center;">
+    <h2 id="gallery-title" style="color:white;"></h2>
 
+    <img id="img1" src="" style="width:250px; margin:10px; border-radius:10px;">
+    <img id="img2" src="" style="width:250px; margin:10px; border-radius:10px;">
+    <img id="img3" src="" style="width:250px; margin:10px; border-radius:10px;">
+    <img id="img4" src="" style="width:250px; margin:10px; border-radius:10px;">
+</div>
+
+<script>
+function showGallery(title,a,b,c,d){
+    document.getElementById("gallery").style.display="block";
+    document.getElementById("gallery-title").innerHTML=title;
+
+    document.getElementById("img1").src=a;
+    document.getElementById("img2").src=b;
+    document.getElementById("img3").src=c;
+    document.getElementById("img4").src=d;
+}
+</script>
 
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;align-items:start;">
 
-<div style="background:white;padding:25px;min-height:220px;border-radius:15px;box-shadow:0 4px 10px rgba(0,0,0,0.15);text-align:center;">
+<div onclick="showGallery('Artificial Intelligence','ai1.jpg','ai2.jpg','ai3.jpg','ai4.jpg')" style="background:white;padding:25px;min-height:220px;border-radius:15px;box-shadow:0 4px 10px rgba(0,0,0,0.15);text-align:center;cursor:pointer;">
 <img src="artificial-intelligence.jpg.jpeg" style="width:100%;height:220px;object-fit:cover;border-radius:10px;margin-bottom:15px;">
 <h3 style="margin:10px 0;"</3>Artificial Intelligenceh</3>
 <p style="line-height:1.6;color:#555;">
 </div>
 
-<div style="background:white;padding:25px;border-radius:15px;box-shadow:0 4px 10px rgba(0,0,0,0.15);text-align:center;">
+<div onclick="showGallery('Web Development','web-development.jpg.jpeg','web-development-2.jpg.jpeg','web-development-3.jpg.jpeg','web-development-4.jpg.jpeg')" style="background:white;padding:25px;border-radius:15px;box-shadow:0 4px 10px rgba(0,0,0,0.15);text-align:center;cursor:pointer;">
 <img src="web-development.jpg.jpeg" style="width:100%;height:220px;object-fit:cover;border-radius:10px;margin-bottom:15px;">
 <h3 style="margin:10px 0;">Web Development</h3>
 <p style="line-height:1.6;color:#555;">
 </div>
 
-<div style="background:white;padding:25px;border-radius:15px;box-shadow:0 4px 10px rgba(0,0,0,0.15);text-align:center;">
+<div onclick="showGallery('Cyber Security','cyber-security.jpg.jpeg','cyber-security-2.jpg.jpeg','cyber-security-3.jpg.jpeg','cyber-security-4.jpg.jpeg')" style="background:white;padding:25px;border-radius:15px;box-shadow:0 4px 10px rgba(0,0,0,0.15);text-align:center;cursor:pointer;">
 <img src="cyber-security.jpg.jpeg" style="width:100%;height:220px;object-fit:cover;border-radius:10px;margin-bottom:15px;">
 <h3 style="margin:10px 0;">Cyber Security</h3>
 <p style="line-height:1.6;color:#555;">
 </div>
 
-<div style="background:white;padding:25px;border-radius:15px;box-shadow:0 4px 10px rgba(0,0,0,0.15);text-align:center;">
+<div onclick="showGallery('Food & Grocery Delivery','food-delivery-1.jpg.jpeg','food-delivery-2.jpg.jpeg','food-delivery-3.jpg.jpeg','food-delivery-4.jpg.jpeg')" style="background:white;padding:25px;border-radius:15px;box-shadow:0 4px 10px rgba(0,0,0,0.15);text-align:center;cursor:pointer;">
 <img src="food-delivery-1.jpg.jpeg" style="width:100%;height:220px;object-fit:cover;border-radius:10px;margin-bottom:15px;">
 <h3 style="margin:10px 0;">Food & Grocery Delivery</h3>
 <p style="line-height:1.6;color:#555;">
 </div>
 
 </div>
-
+ 
 
 
 </section>
